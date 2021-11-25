@@ -1,0 +1,130 @@
+:root {
+    --blue: #49bfff;
+    --white: #fff;
+    --gray: #333;
+    --fontSize: 16px;
+    --transition: .3s ease-in-out;
+}
+body {
+    font-size: var(--fontSize);
+
+}
+a {
+    transition: var(--transition);
+}
+.bg-light {
+    background: var(--blue) !important;
+}
+.btn-outline-primary {
+    border-radius: 0;
+    color: var(--white);
+    border-color: var(--white);
+}
+.btn-outline-primary:hover {
+    background: var(--white);
+    color: var(--gray);
+    border-color: var(--white);
+}
+.jumbotron {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+/******* Nav **********/
+.navbar {
+    padding: 0 100px;
+}
+.navbar-brand {
+    color: var(--white) !important;
+    font-size: 2rem;
+}
+.navbar-brand:hover {
+    color: var(--gray) !important;
+}
+.nav-link {
+    color: var(--white) !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.nav-link:hover {
+    color: var(--gray) !important;
+}
+nav button {
+    text-transform: uppercase;
+}
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+    color: var(--gray) !important;
+}
+/******* Slider **********/
+.carousel-caption {
+    text-align: left;
+    bottom: 30%;
+}
+
+/******* Counter **********/
+
+.counter i {
+    color: var(--blue);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/******* Plan **********/
+.plan i {
+    font-size: 2rem;
+    background: var(--white);
+    color: var(--blue);
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+}
+
+/******* Packages **********/
+.packages .price {
+    position: relative;
+}
+.packages .price p {
+    position: absolute;
+    bottom: 5px;
+    right: 25px;
+    background: var(--blue);
+    padding: 3px 6px;
+    color: var(--white);
+}
+.packages .card-body i{
+    color: var(--blue);
+}
+@media(max-width: 767px) {
+    .packages .cold-md-3 {
+        margin-bottom: 30px;
+    }
+}
+/******* Trip **********/
+.trip {
+    padding: 100px 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/slide-palms.jpg);
+    background-position: center;
+    background-size: cover;
+}
+/******* Destinations **********/
+footer {
+    color: lightgray;
+}
+footer .socials li {
+    margin-right: 10px;
+}
+footer input {
+    background: black;
+    color: lightgray;
+    padding: 5px;
+}
+footer i {
+    position: relative;
+    left: -30px;
+    color: var(--white);
+}
+
+/* .packages button {
+    margin: 30px auto 0 auto;
+} */
+
